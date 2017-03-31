@@ -1,0 +1,78 @@
+package com.jetbrains;
+
+
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+
+
+
+public class Main2 {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner scnr = new Scanner(System.in);
+        int month1 = 0;
+        int month2 = 0;
+        int day1 = 0;
+        int day2 = 0;
+        int year1 = 0;
+        int year2 = 0;
+        int diffMonth = 0;
+        int diffDay = 0;
+        int diffYear = 0;
+
+        /*
+        int test = month1 - month2;
+        int y = pos2.y - pos1.y
+        int size = Math.abs(x * y);*/
+
+
+
+
+        //get first date from user input
+        System.out.println("Enter first month: " + month1); //explain format
+
+        System.out.println("Enter first day: " + day1);
+
+        System.out.println("Enter first year: " + year1);
+
+        System.out.println("Enter second month: " + month2);
+
+        System.out.println("Enter second day: " + day2);
+
+        System.out.println("Enter second year: " + year2);
+
+        //separate diff between year, day and month
+
+        diffMonth = month1 - month2;
+        diffDay = day1 - day2;
+        diffYear = year1 - year2;
+
+
+        System.out.println(diffMonth + "/" + diffDay + "/" + diffYear);
+
+
+       /* Scanner int = new Scanner(System.in);
+
+        month1 = scnr.nextInt(); //this will screen for number input, provided they are entered correctly
+        day1 = scnr.nextInt();
+        year1 = scnr.nextInt();
+
+        System.out.println(month1 + "/" + day1 +  "/" +  year1);
+
+        //ask for the day, month and year in each print
+
+        //get second date from user input
+        System.out.println("Enter second date: Month/ Day / Year");
+
+        System.out.println(month2 + "/" + day2 +  "/" +  year2);
+        month2 = scnr.nextInt();
+        day2 = scnr.nextInt();
+        year2 = scnr.nextInt();*/
+
+
+
+
+    }
