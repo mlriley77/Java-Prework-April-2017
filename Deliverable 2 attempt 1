@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class main3() {
+
+
+    public static void main3 (String[] args) {
+        new Scanner(System.in);
+            byte month1 = 0;
+            byte month2 = 0;
+            byte day1 = 0;
+            byte day2 = 0;
+            byte year1 = 0;
+            byte year2 = 0;
+        boolean diffMonth = false;
+        boolean diffDay = false;
+        boolean diffYear = false;
+        System.out.println("Enter first month: " + month1);
+
+        System.out.println("Enter first day: " + day1);
+
+        System.out.println("Enter first year: " + year1);
+
+        System.out.println("Enter second month: " + month2);
+
+        System.out.println("Enter second day: " + day2);
+
+        System.out.println("Enter second year: " + year2);
+
+        int diffMonth1 = month1 - month2;
+        int diffDay1 = day1 - day2;
+        int diffYear1 = year1 - year2;
+
+        System.out.println(diffMonth1 + "/" + diffDay1 + "/" + diffYear1);
+    }
+}
