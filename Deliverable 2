@@ -1,0 +1,41 @@
+
+import java.text.ParseException;
+import java.util.Scanner;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Main {
+
+    public static void main(String[] args) throws ParseException {
+        Scanner scnr = new Scanner(System.in);
+          String date1 = " ";
+          Date d1 = null;
+          String date2 = " ";
+          Date d2 = null;
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("mm-dd-yyyy");
+
+        //get first date from user
+        System.out.println("Enter the Date: mm-dd-yyyy");
+          date1 = scnr.next();
+
+        //parse string into date
+        d1 = dateFormat.parse(date1);
+
+        //get second date from user
+        System.out.println("Enter the Date: mm-dd-yyyy");
+         date2 = scnr.next();
+
+        //parse string into date
+        d2 = dateFormat.parse(date2);
+
+
+        System.out.println(d1);
+
+        System.out.println(d2);
+
+        //need to find the difference
+
+        //System.out.println(d2 - d1);  I still can't figure out how to show the diff of d2-d1
+    }
+}
